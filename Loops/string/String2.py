@@ -27,7 +27,7 @@ for i in st:
         res=res+i
         print(res)
 
-s='aaabbc'
+st='aaabbc'
 def compress_string(s):
     
     result = ""
@@ -70,4 +70,39 @@ if result:
 else:
     print("No second most frequent character found.")
 
+
+# minimum occured character:
+st='aaabbc'
+def compress_string(s):
+    #st="aaabbc"
+    #res= ""
+    #count = 1
+    #for i in range(1, len(s)):
+        #if s[i]<min(len(i)):
+           # count+= 1
+        #else:
+            #c+=1
+            #print(res)
+ st="aaabbc"
+res=''
+def min_occurred_char(st):
+    
+    freq = Counter(st)
+    
+
+    min_char = min(freq, key=freq.get)
+    
+    return min_char, freq[min_char]
+  
+#minimum occured character:
+st='aaabbc' 
+res='' 
+
+
+
+
+
+
+
+        
 
